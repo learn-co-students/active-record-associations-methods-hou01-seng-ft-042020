@@ -19,3 +19,11 @@ mj.songs << thriller
 
 pop.songs << thriller
 rap.songs << hotline_bling
+
+hello = Song.create(name: "Hello")
+adele = Artist.create(name: "Adele")
+
+hello.artist = adele
+rolling_in_the_deep = Song.create(name: "Rolling in the Deep")
+adele.songs << rolling_in_the_deep
+adele.songs << hello
